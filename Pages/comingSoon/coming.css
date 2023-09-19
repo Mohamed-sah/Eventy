@@ -1,0 +1,264 @@
+
+.coming_desc{
+    flex: 1;
+    padding: 15px;
+}
+.coming_image,
+.video_pop,
+.video_ridus 
+{
+ display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.coming_image{
+    flex: 1;
+    position: relative;
+   
+}
+.coming_image img{
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.video_pop{
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,.3);
+
+}
+.video_ridus,
+.video_ridus::before,
+.video_ridus::after{
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition:all .2s ease-in ;
+    -webkit-transition:all .2s ease-in ;
+    -moz-transition:all .2s ease-in ;
+    -ms-transition:all .2s ease-in ;
+    -o-transition:all .2s ease-in ;
+}
+.video_ridus{
+    width: 110px;
+    height: 110px;
+    border: 3px solid #acacac;
+    position: relative;
+    cursor: pointer;
+}
+.video_ridus span{
+    width: 0;
+    height: 0;
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+    border-left: 20px solid #1DBEDE;
+    border-right: 0;
+}
+.video_ridus::before{
+    position: absolute;
+    inset: -12px;
+    content: '';
+    border: 2px solid #acacac;
+
+}
+.video_ridus::after{
+    position: absolute;
+    inset: -20px;
+    content: '';
+    border: 1px solid #acacac;
+}
+
+.video_ridus:hover{
+    background-color: #5656DF;
+    border-color: #5050d2;
+}
+
+.video_ridus:hover::before,
+.video_ridus:hover::after{
+    display: none;
+
+}
+.coming_desc img{
+    width: 150px;
+}
+.coming_desc .title{
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.25rem;
+    font-size: 18px;
+    line-height: 1.05556;
+    margin-block-start: 6rem;
+    margin-bottom: 25px;
+}
+.coming_desc h2{
+    max-width: 70%;
+    text-transform: capitalize;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+.timer_item{
+    text-align: center;
+}
+.timer_item h5{
+font-size: 35px;
+font-weight: 400;
+color: #1DBEDE;
+}
+.timer_item span{
+    font-size: 12px;
+    color: #151515cc;
+}
+.coming_desc h3{
+margin-top: 3rem;
+    margin-bottom: 0;
+    font-weight: 700;
+    color: #151515;
+    letter-spacing: 0;
+        font-size: 18px;
+    line-height: 1.05556;
+}
+form {
+    margin-top: 1.1rem;
+    align-items: center;
+}
+form input{
+        display: block;
+        width: 60%;
+        min-height: 60px;
+        padding: 16px 25px;
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 26px;
+        color: #151515;
+        border: 1px solid #C4C4C4;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+}
+form button{
+    background: linear-gradient(228.54deg, #1DBEDE 30.16%, #5656DF 89.45%);
+    color: #fff;
+    font-weight: 500;
+}
+
+.coming_desc p{
+    margin-top: 2rem;
+        color: rgba(0, 0, 0, 0.75);
+        display: block;
+    font-size: 12px;
+    line-height: 1.5;
+    font-weight: 400;
+}
+.coming_desc h6{
+    font-size: 18px;
+    line-height: 1.05556;
+    font-weight: 700;
+    color: #151515;
+    letter-spacing: 0;
+    margin: 2rem 0;
+}
+.socail_list{
+    align-items: center;
+}
+.socail_list li{
+    width: 50px;
+    height: 50px;
+    border: 1px solid #acacac;
+    border-radius:50%;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    -ms-border-radius:50%;
+    -o-border-radius:50%;
+}
+
+
+@media  (max-width:768px) {
+    .coming_soon{
+        flex-direction: column-reverse;
+    }
+    
+.coming_desc{
+    flex: 1;
+    padding: 40px 3rem;
+}
+
+.video_ridus{
+    width: 100px;
+    height: 100px;
+}
+
+.coming_desc img{
+    margin-top: 2rem;
+    width: 170px;
+}
+.coming_desc .title{
+
+    margin-block-start: 4rem;
+}
+.coming_desc h2{
+    max-width: 90%;
+    font-size: 30px;
+
+}
+
+.timer_item h5{
+font-size: 30px;
+}
+.coming_desc h3{
+margin-top: 2rem;
+}
+
+
+    
+}
+
+@media  (max-width:425px) {
+
+    
+.coming_desc{
+    padding: 40px 1rem;
+}
+
+.video_ridus{
+    width: 80px;
+    height: 80px;
+}
+.coming_desc .title{
+
+    margin-block-start: 2rem;
+}
+.coming_desc h2{
+    max-width: 90%;
+    font-size: 25px;
+
+}
+
+.timer_item h5{
+font-size: 22px;
+}
+.coming_desc h3{
+margin-top: 1rem;
+}
+form{
+    flex-direction: column;
+}
+form input,
+form button
+{
+ 
+        width: 100% !important;
+}
+.coming_desc p{
+    margin-top: 1rem;
+}
+.coming_desc h6{
+    margin: 1rem 0;
+}
+
+}
