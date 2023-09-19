@@ -1,0 +1,553 @@
+
+@font-face {
+  font-family: "TuesdayNight";
+  src: url("../../Maincss/TuesdayNight-Regular.otf") format("truetype");
+}
+.home_containe,
+.home_container::before,
+.home_image img{
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+}
+.home_container{
+   position: relative;
+   height: 70vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ 
+}
+.home_image,
+.home_container::before{
+    position: absolute;
+      inset: 0;
+}
+.home_image{
+    z-index: -1;
+}
+.home_container::before{
+    content: '';
+    background-color: black;
+    opacity: .4;
+    z-index: 1;
+}
+
+.home_image img{
+    object-fit: cover;
+}
+.home_desc{
+    text-align: center;
+    z-index: 4;
+     color: #fff;
+}
+.home_desc h2{
+    font-size: 50px;
+    line-height: 1.08;
+    margin-bottom: 30px;
+    
+}
+.home_desc .home_link .dot{
+    display:inline-block;
+   width: 5px;
+   height: 5px;
+ margin-inline: 10px;
+   background-color: #FFD541;
+   border-radius: 50%;
+   -webkit-border-radius: 50%;
+   -moz-border-radius: 50%;
+   -ms-border-radius: 50%;
+   -o-border-radius: 50%;
+}
+.home_desc .home_link a{
+      font-size: 13px;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #fff;
+}
+.home_desc .home_link p{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 13px;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    font-weight: 400;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.5);
+    
+
+
+
+}
+
+
+/* /==============================Heading section==============================\ */
+.headings_sec{
+    padding: 6rem;
+}
+.color_fonts{
+
+    width: 40%;
+    height: fit-content;
+}
+.headings{
+width: 60%;
+}
+.headings p{
+margin-top: 30px;
+font-size: 14px;
+line-height: 1.66667;
+font-weight: 300;
+color: rgba(21, 21, 21, 0.8);
+max-width: 95%;
+}
+.headings h1{
+    font-size: 80px;
+    line-height: 1.075;
+    font-weight: 700;
+    margin-top: 30px;
+}
+.headings h2{
+     font-size: 60px;
+    line-height: 1.075;
+   font-weight: 700;
+    margin-top: 30px;
+}
+.headings h3{
+     font-size: 45px;
+    line-height: 1.075;
+    font-weight: 700;
+    margin-top: 30px;
+}
+.headings h4{
+     font-size: 30px;
+    line-height: 1.075;
+    font-weight: 700;
+    margin-top: 30px;
+}
+.headings h5{
+     font-size: 20px;
+    line-height: 1.075;
+    font-weight: 700;
+    margin-top: 30px;
+}
+.headings h6{
+     font-size: 15px;
+    line-height: 1.075;
+    font-weight: 700;
+    margin-top: 30px;
+}
+.html_text p{
+    width: 120%;
+    max-width: 120%;
+}
+.html_text p .highlighted{
+    background-color: #1DBEDE;
+    color: #fff;
+    padding: 2px 3px;
+}
+.html_text p .tooltip{
+    position: relative;
+}
+.html_text p .tooltip::before{
+    position: absolute;
+    content: 'Tooltips';
+    z-index: 3;
+    background-color: #1DBEDE;
+    top: -35px;
+    left: 50%;
+    padding: 4px 9px;
+    color: #fff;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+display: none;
+
+}
+.html_text p .tooltip::after{
+    position: absolute;
+    content: '';
+    z-index: 3;
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 10px solid #1DBEDE;
+display: none;
+
+
+}
+.html_text p .tooltip:hover::after,
+.html_text p .tooltip:hover::before
+{
+    display: inline-block;
+ }
+ .html_text p .text_through{
+    text-decoration: line-through;
+ }
+ .html_text p .text_under{
+    text-decoration: underline;
+ }
+  .html_text p .hover{
+    color: #1DBEDE;
+  }
+
+.lists{
+    margin-top: 5rem;
+}
+  .lists_box{
+margin-top: 30px;
+gap: 8rem;
+font-size: 14px;
+color: rgba(21, 21, 21, 0.8);
+  } 
+.lists_box ol li{
+padding-left: 7px;
+    }
+
+.blockquote{
+    margin-top: 5rem;
+}
+.blockquote p{
+    max-width: 90%;
+    font-size: 15px;
+    line-height: 1.66667;
+    font-weight: 300;
+    color: rgba(21, 21, 21, 0.8);
+    font-style: italic;
+}
+.blockquote .block_name{
+    width:55%;
+    height: 2.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+.blockquote .block_name .back{
+height: 100%;
+flex: 4;
+background-image: url("../../Images/bg-dot.png");
+opacity: .4;
+}
+.blockquote .block_name h5{
+    font-weight: 400;
+     height: 100%;
+     flex: 2;
+}
+
+.color_fonts{
+    border-left: 2px solid #b3b0b0;
+    padding-left: 3rem;
+}
+
+.color_fonts h5{
+    font-size: 18px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+    margin-bottom: 1.7rem;
+} 
+.color_fonts .fonts h4{
+    margin-bottom: 30px;
+}
+.color_fonts .fonts .henric{
+        font-weight: 400;
+    letter-spacing: -0.03em;
+    text-transform: capitalize;
+        font-size: 50px !important;
+    line-height: 1.08;
+}
+.color_fonts .fonts .poppins{
+        font-weight: 600;
+    letter-spacing: -0.03em;
+        font-size: 36px;
+    line-height: 1.33333;
+}
+.color_fonts .fonts .tuesday{
+        font-weight: 400;
+    letter-spacing: -0.03em;
+    text-transform: capitalize;
+      font-family: "TuesdayNight";
+      font-size: 50px;
+    line-height: 1.08;
+}
+.color_fonts .colors .color_box{
+    width: 50%;
+display: grid;
+grid-template-columns: repeat(4,1fr);
+gap: 4px;
+}
+.color_fonts .colors .color_box span{
+    width: 50px;
+    height: 50px;
+}
+.color_fonts .colors .color_box .a{background: #1DBEDE}
+.color_fonts .colors .color_box .b{ background: #F73CA1;}
+.color_fonts .colors .color_box .c{ background: #FFD541;;}
+.color_fonts .colors .color_box .d{ background: #00E175;}
+.color_fonts .colors .color_box .e{ background: #5656DF;}
+.color_fonts .colors .color_box .f{ background: #151515;}
+.color_fonts .colors .color_box .g{ background: #C4C4C4;}
+.color_fonts .colors .color_box .h{ background: #E7E7E7;}
+.color_fonts .colors .color_box .i{ background: #3C3C3C;}
+.color_fonts .colors .color_box .j{background: #444141;}
+
+/* \==============================Heading section==============================/ */
+
+
+
+/* /=========================footer===================================\ */
+
+
+footer{
+background: #444141;
+height: 25rem;
+gap:40px;
+margin-bottom: -1rem;
+overflow: hidden;
+}
+
+.map{
+flex:2;
+}
+.map iframe{
+width: 100%;
+max-width: 100%;
+height: 100%;
+max-height: 100% !important;
+
+}
+.footer_box{
+flex:3;
+margin-top: 5rem;
+display: flex;
+gap: 50px;
+}
+.footer_box .box_desc h4{
+text-transform: uppercase;
+font-weight: 600;
+line-height: 28px;
+letter-spacing: 0.1em;
+font-size: 18px;
+color: #fff;
+margin-bottom: 20px;
+}
+.footer_box .box_desc p{
+font-weight: 200;
+color: rgba(255, 255, 255, 0.8);
+font-size: 17px;
+line-height: 1.55556;
+margin-bottom: 20px;
+
+}
+.box_desc span{
+font-size: 13px;
+color: #b3b0b0;
+}
+.footer_box .box_desc p a{
+display: block;
+color: #fff;
+}
+.box_desc p a span{
+color: #1DBEDE;
+}
+.footer_box form {
+margin-bottom: 25px;
+}
+.footer_box form input[type="email"]{
+background: rgba(255, 255, 255, 0.1);
+color: rgba(255, 255, 255, 0.8);
+min-height: 60px;
+padding: 16px 25px;
+font-size: 15px;
+font-weight: 300;
+line-height: 26px;
+border-radius: 5px;
+border: 1px solid #3C3C3C;
+outline: none;
+width: 22rem;
+
+}
+.footer_box form input[type="submit"]{
+font-size: 15px;
+line-height: 1.5;
+border: none;
+z-index: 1;
+color: #ffffff;
+font-weight: 600;
+letter-spacing: 0.1em;
+text-transform: uppercase;
+text-align: center;
+cursor: pointer;
+user-select: none;
+transition: 250ms all ease-in-out;
+background: linear-gradient(228.54deg, #1DBEDE 30.16%, #5656DF 89.45%);
+padding: 19px 35px;
+border-radius: 5px;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+-ms-border-radius: 5px;
+-o-border-radius: 5px;
+margin-left: 15px;
+}
+
+
+.footer_box .social{
+color: #fff;
+display: flex;
+flex-direction: column;
+gap: 15px;
+align-items: center;
+}
+.footer_box .social h5{
+font-size: 20px;
+}
+.footer_box .social li{
+width: 40px;
+height: 40px;
+background-color: rgba(255, 255, 255, 0.1);
+border-radius: 50%;
+-webkit-border-radius: 50%;
+-moz-border-radius: 50%;
+-ms-border-radius: 50%;
+-o-border-radius: 50%;
+margin-bottom: 15px;
+}
+/* \=========================footer===================================/ */
+
+
+@media (max-width:768px) {
+
+    .headings_sec{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column-reverse;
+}
+.color_fonts{
+display: flex;
+justify-content: space-between;
+    width: 100%;
+    height: fit-content;
+    padding-top: 4rem;
+    border-left: none;
+}
+.headings{
+width: 100%;
+}
+.html_text p{
+
+    max-width: 100%;
+}
+.html_text h4,
+.blockquote h4,
+.lists h4
+{
+    font-size: 23px !important;
+}
+.headings h1{
+    font-size: 50px ;
+}
+.headings h2{
+    font-size: 40px ;
+}
+.headings h3{
+    font-size: 32px ;
+}
+.headings h4{
+    font-size: 25px ;
+}
+.headings h5{
+    font-size: 16px ;
+}
+.headings h6{
+    font-size: 12px ;
+}
+.lists_box{
+    flex-direction: column;
+    gap: 40px;
+}
+    /* footer ======================================= */
+
+footer{
+height: auto;
+flex-direction: column;
+
+}
+
+.map iframe{
+height: 14rem;
+max-height: 15rem;
+}
+.footer_box{
+flex-direction: column-reverse;
+margin-top: .4rem;
+padding: 0 20px;
+gap: 20px;
+
+}
+.footer_box form {
+margin-bottom: 25px;
+}
+.footer_box form input[type="email"]{
+width: 100%;
+
+}
+.footer_box form input[type="submit"]{
+width: 100%;
+margin: 0;
+margin-top: 20px;
+
+}
+
+
+.footer_box .social{
+align-items: flex-start;
+}
+.footer_box .social ul{
+display: flex;
+gap:15px;
+}
+.footer_box  .box_desc p{
+font-size: 15px;
+font-weight: 500;
+}
+.footer_box  .box_desc > span{
+font-size: 14px;
+width: 100%;
+}
+}
+@media (max-width:425px){
+    .color_fonts{
+display: flex;
+flex-direction: column;
+}
+.headings h1{
+    font-size: 40px;
+}
+.headings h2{
+    font-size: 30px;
+}
+.headings h3{
+    font-size: 25px;
+}
+.headings h4{
+    font-size: 20px;
+}
+.headings h5{
+    font-size: 15px;
+}
+.headings h6{
+    font-size: 10px;
+}
+}
